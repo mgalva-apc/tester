@@ -242,17 +242,15 @@ div#header1 p{
     font-family:'LocalBrewerySans';
 }
 
->>>>>>> d398beeba6cd90887c3ae7277b6ebcb25c8ea2ed
 div#contenthere {
     display: flex;
     gap: 0vw;
     margin-left: 3vw;
     margin-right: 3vw;
-    margin-top: 5vh;
-    padding-top: 2vh;
+    margin-top: -3vw;
+    padding-top: 2vw;
     padding-bottom: 2.8vw;
     font-family: 'Cream';
-    position: relative;
 }
 
 div#berry-slidebox {
@@ -281,7 +279,6 @@ div#contenthere img#slideshow-frame{
 div#berry-slidebar {
     background-color:beige;
     margin: 2.5vw;
-    margin-top: -1vh;
 }
 
 .slidebar-content{
@@ -317,7 +314,7 @@ div#arrow-buttons{
     display: flex;
     gap: 3vw;
     position: absolute;
-    top: -4vh;
+    top: 4vw;
     left: 56vw;
 }
 
