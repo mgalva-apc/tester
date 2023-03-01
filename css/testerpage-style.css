@@ -25,7 +25,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../media/berry-bg.png");
+    background-image: url("../media/alt-bg.png");
     min-height: 100%;
     overflow-x: hidden;
     position: relative;
@@ -112,6 +112,16 @@ div#rightside img:hover{
     width:7vw;
 }
 
+div#ribbon1{
+    z-index: -3;
+    background-color: #72597E;
+    min-height: 25vh;
+    min-width: 100vw;
+    position: absolute;
+    top: 50vh;
+    left: 0vw;
+}
+
 div#content1{
     display: flex;
     flex-direction: row;
@@ -132,36 +142,107 @@ div#picrep{
 .picsforrep {
     position: absolute;
     top: 3.57vw;
-    left: 0.65vw;
-    width:27vw;
+    left: 3vw;
+    width:32vw;
     opacity:1;
     transition: opacity 1s ease-out;
 }
 
 img#name{
-    width: 25vw;
+    width: 32vw;
     height: auto;
-    top: 45vh;
-    left: 5vw;
+    top: 55vh;
+    left: 10vw;
     position: absolute;
     z-index: 2;
 }
 
-dialog#berry-modal {
-    width: 90vw;
-    height: 90vh;
+div#modalmenu{
+    position: relative;
+    top: 25vh;
+    right: 3vw;
+    background-color: #F7B6BE;
+    border: 3px solid #72597E;
+    border-radius: 25px;
+    max-height: 42vh;
+    min-width: 40vw;
+    font-family: Cream;
+    text-align: center;
 }
 
-div#header1 {
+div#modalmenu h3{
+    font-weight: bold;
+    font-size: 3.2vw;
+    Color: #72597E;
+    margin-top: 4vh;
+    margin-bottom: 0.75vw;
+}
+
+div#message{
+    background-color: beige;
+    border: 1px solid #F7B6BE;
+    border-radius: 15px;
+    margin-left: 2.3vw;
+    min-height: 11vw;
+    max-width: 35vw;
+    font-size: 1.3vw;
+}
+
+button#berry-button1{
+    z-index: 3;
+    width: 3vw;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: -24vh;
+    left: 57.3vw;
+    cursor: pointer;
+}
+
+button#berry-button1 img{
+    width: 27vw;
+}
+
+button#berry-button1 img:hover{
+    width: 30vw;
+}
+
+img#berry-cancel{
+    cursor: pointer;
+}
+
+.berry-modal {
+    position: sticky;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    padding-top: 0.1vw;
+    overflow: auto;
+    background-image: url("../media/desktoptry.png");
+    background-size: 95.7vw;
+}
+
+.berry-modal::backdrop {
+    background: linear-gradient(45deg, red, blue);
+    opacity: 0.3;
+}
+
+div#header1{
     display: flex;
-    justify-content: flex-end;
+    padding-left: 77vw;
+    border-radius:5%;
 }
 
-img#berry-cancel {
-    height: auto;
+div#header1 img{
     width: 5vw;
 }
 
+div#header1 p{
+    font-size:1.2vw;
+    font-family:'LocalBrewerySans';
+}
+
+>>>>>>> d398beeba6cd90887c3ae7277b6ebcb25c8ea2ed
 div#contenthere {
     display: flex;
     gap: 0vw;
@@ -389,10 +470,3 @@ div#contact p{
 p#webprog{
     margin-top: -0.50vw;
 }
-
-
-
-
-
-
-
