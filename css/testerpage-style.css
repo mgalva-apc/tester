@@ -144,7 +144,7 @@ div#picrep{
     top: 3.57vw;
     left: 3vw;
     width:32vw;
-    opacity:1;
+    opacity:0;
     transition: opacity 1s ease-out;
 }
 
