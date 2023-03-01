@@ -1,0 +1,364 @@
+@font-face{font-family: Cream; 
+    src: url(../fonts/cream-DEMO.otf);
+    src: url(../fonts/cream-DEMO.ttf);
+}
+
+@font-face{font-family:LocalBrewerySans;
+    src: url(../fonts/LocalBrewerySans.otf);
+    src: url(../fonts/LocalBrewerySans.ttf);
+}
+
+@font-face{font-family:Cabriole;
+    src: url(../fonts/CabrioleDemoBold.ttf);
+    src: url(../fonts/CabrioleDemoBoldItalic.ttf);
+    src: url(../fonts/CabrioleDemoCondensed.ttf);
+    src: url(../fonts/CabrioleDemoItalic.ttf);
+    src: url(../fonts/CabrioleDemoLight.ttf);
+    src: url(../fonts/CabrioleDemoLightItalic.ttf);
+    src: url(../fonts/CabrioleDemoRegular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../media/berry-bg.png");
+    width: 100vh;
+    overflow-x: hidden;
+}
+
+div#navibar {
+    background-image: url("../media/navibar-design.png");
+    background-size:cover;
+    display: flex;
+    gap:4vw;
+    justify-content:center;
+    width: 100vw;
+    min-width: 100vw;
+    height: 7.8vw;
+    min-height:9.7;
+    position: sticky;
+    top:0;
+    padding-bottom: -1vw;
+    z-index:3;
+    border-bottom: 10px white solid;
+    font-family:Cabriole;
+    font-weight: bold;
+}
+
+div#navibar img{
+    width: 6vw;
+}
+
+div#navibar a{
+    Color: white;
+    text-decoration: none;
+    font-size:1.3vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    text-align: center;
+}
+
+a#icon{
+    display: flex;
+    flex-direction: column;
+}
+
+div#logo img{
+    width:11.7vw;
+}
+
+div#logo {
+    float:center;
+    z-index:4;
+}
+
+img#newlogo:hover{
+    width:12.3vw;
+}
+
+div#leftside{
+    float: left;
+    display: flex;
+}
+
+div#leftside img:hover{
+    width:7vw;
+}
+
+div#leftside p{
+    margin-top: -0.15vw;
+    background-color:#D85454;
+    border-radius: 25px;
+}
+
+
+div#rightside{
+    float:right;
+    display: flex;
+}
+
+div#rightside p{
+    margin-top: -0.15vw;
+    background-color:#D85454;
+    border-radius: 25px;
+}
+
+div#rightside img:hover{
+    width:7vw;
+}
+
+div#content1{
+    display: flex;
+    flex-direction: row;
+}
+
+div#picrep{
+    position: relative;
+}
+
+.picsforrep {
+    position: absolute;
+    top: 3.57vw;
+    left: 0.65vw;
+    width:27vw;
+    opacity:1;
+    transition: opacity 1s ease-out;
+}
+
+img#name{
+    width: 5vw;
+    position: relative;
+    z-index: 2;
+}
+
+div#contenthere {
+    display: flex;
+    gap: 0vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: -3vw;
+    padding-top: 2vw;
+    padding-bottom: 2.8vw;
+    font-family: 'Cream';
+}
+
+div#berry-slidebox {
+    position: relative;
+}
+
+div#contenthere img#slideshow-frame{
+    width: 48.7vw;
+    height: 33vw;
+}
+
+.berry-vids {
+    z-index:1;
+    position: absolute;
+    top: 3.57vw;
+    left: 0.65vw;
+    border-radius:1%;
+    border: 2px #8bd4c4 solid;
+    object-fit: cover;
+    width:47vw;
+    height: 25vw;
+    opacity:1;
+    transition: opacity 1s ease-out;
+}
+
+div#berry-slidebar {
+    background-color:beige;
+    margin: 2.5vw;
+}
+
+.slidebar-content{
+    background-image:url("../media/berry-gridbrow.png");
+    border-radius: 3%;
+    margin: 1vw;
+    padding-bottom: 2vw;
+    opacity: 0.8;
+    z-index:1;
+    position: absolute;
+    opacity:1;
+    transition: opacity 1s ease-out;
+    object-fit: cover;
+    font-size: 1.2vw;
+    margin: 2vw;
+}
+
+.slidebar-content img{
+    padding-left: 3vw;
+    margin-top: -7vw;
+    margin-bottom: -3vw;
+    width: 27vw;
+}
+
+.slidebar-content p{
+    font-size: 1.2vw;
+    margin: 2vw;
+    text-align: justify;
+    color: white;
+}
+
+div#arrow-buttons{
+    display: flex;
+    gap: 3vw;
+    position: absolute;
+    top: 4vw;
+    left: 56vw;
+}
+
+div#arrow-buttons img#left{
+    width: 4vw;
+    z-index: 3;
+    cursor: pointer;
+}
+div#arrow-buttons img#right{
+    width: 4vw;
+    z-index: 3;
+    cursor: pointer;
+}
+
+div#footer{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    min-width: 100vw;
+    background-color: white;
+    height: 12vw;
+    justify-content: space-around;
+    font-family: Cream;
+}
+
+div#logoround{
+    background-color:#B32f2f;
+    background-size: cover;
+    min-width: 15vw;
+    text-align: center;
+}
+
+div#logoround img{
+    margin-top: 1vw;
+    width: 10vw;
+}
+
+div#quicklinks{
+    background-color:#E89292;
+    background-size: cover;
+    min-width: 35vw;
+    padding-left: 1vw;
+    Color: white;
+}
+
+div#quicklinks a{
+    font-family: Cabriole;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3vw;
+}
+
+div#quicklinks a:hover{
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+
+div#quicklinks h4{
+    margin-bottom: 0.50vw;
+    margin-top: 1vw;
+    text-decoration: underline;
+    font-size: 1.7vw;
+}
+
+div#links{
+    display: flex;
+    gap: 5vw;
+    padding-left: 4vw;
+}
+
+div#form{
+    background-color:#F7c4c4;
+    background-size: cover;
+    min-width: 25vw;
+    padding-left: 1vw;
+    Color: #Be1111;
+}
+
+div#form h4{
+    margin-bottom: 0.50vw;
+    margin-top: 1vw;
+    text-decoration: underline;
+    font-size: 1.7vw;
+}
+
+div#form p{
+    font-family: Cabriole;
+    text-decoration: none;
+    color: #Be1111;
+    font-size: 1.3vw;
+    margin-bottom: -1vw;
+}
+
+div#form span{
+    font-family: Cream;
+}
+
+
+div#form a{
+    font-family: Cabriole;
+    text-decoration: none;
+    color: #Be1111;
+    font-size: 1.3vw;
+}
+
+div#form a:hover{
+    font-size: 1.4vw;
+    font-weight: bold;
+    Color: white;
+    background-color: #Be1111;
+    min-width: 3vw;
+}
+
+div#form h4{
+    margin-bottom: 0.50vw;
+    margin-top: 1vw;
+    text-decoration: underline;
+    font-size: 1.4vw;
+}
+
+div#contact{
+    background-color: #Fde1e1;
+    background-size: cover;
+    min-width: 25vw;
+    padding-left: 1vw;
+    Color: #Be1111;
+}
+
+div#contact span{
+    font-family: Cream;
+    font-weight: none;
+}
+
+div#contact h4{
+    margin-bottom: 0.50vw;
+    margin-top: 1vw;
+    text-decoration: underline;
+    font-size: 1.4vw;
+}
+
+div#contact p{
+    font-family: Cabriole;
+    text-decoration: none;
+    color: #Be1111;
+    font-size: 1.3vw;
+    margin-bottom: -1vw;
+}
+
+p#webprog{
+    margin-top: -0.50vw;
+}
+
+
+
+
+
+
+
