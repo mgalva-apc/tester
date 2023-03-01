@@ -112,13 +112,32 @@ div#rightside img:hover{
     width:7vw;
 }
 
+div#firstthing{
+    background-image:url("../media/bantype1.png");
+    background-size: cover;
+    min-height: 35vh;
+    text-align: center;
+    padding-top: 8vh;
+    border-bottom: 8px solid #F7B6BE;
+}
+
+div#firstthing img{
+    width: 38vw;
+    margin-bottom: -3vh;
+}
+
+div#firstthing p{
+    font-family: Cream;
+    font-size: 1.4vw;
+}
+
 div#ribbon1{
     z-index: -3;
     background-color: #72597E;
     min-height: 25vh;
     min-width: 100vw;
     position: absolute;
-    top: 50vh;
+    top: 94vh;
     left: 0vw;
 }
 
@@ -204,7 +223,7 @@ button#berry-button1 img{
 }
 
 button#berry-button1 img:hover{
-    width: 30vw;
+    width: 28vw;
 }
 
 img#berry-cancel{
@@ -324,6 +343,224 @@ div#arrow-buttons img#left{
     cursor: pointer;
 }
 div#arrow-buttons img#right{
+    width: 4vw;
+    z-index: 3;
+    cursor: pointer;
+}
+
+div#ribbon2{
+    z-index: -3;
+    background-color: #F69999;
+    min-height: 25vh;
+    min-width: 100vw;
+    position: absolute;
+    top: 180vh;
+    left: 0vw;
+}
+
+div#content2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18vw;
+    margin-top: -16vh;
+}
+
+#herecontent2 {
+    position: relative;
+    min-height: 75vh;
+}
+
+div#picrep2{
+    position: relative;
+    min-width: 27vw;
+}
+
+.picsforrep2 {
+    position: absolute;
+    top: 2vw;
+    right: 3vw;
+    width:32vw;
+    opacity:0;
+    transition: opacity 1s ease-out;
+}
+
+img#name2{
+    width: 32vw;
+    height: auto;
+    top: 55vh;
+    right: -5vw;
+    position: absolute;
+    z-index: 2;
+}
+
+div#modalmenu2{
+    position: relative;
+    top: 20vh;
+    right: -2vw;
+    background-color: #96D6BF;
+    border: 3px solid #F69999;
+    border-radius: 25px;
+    max-height: 48.4vh;
+    max-width: 40vw;
+    font-family: Cream;
+    text-align: center;
+}
+
+div#modalmenu2 h3{
+    font-weight: bold;
+    font-size: 2.9vw;
+    Color: #b15353;
+    margin-top: 4vh;
+    margin-bottom: 0.75vw;
+}
+
+div#message2{
+    background-color: beige;
+    border: 1px solid #F7B6BE;
+    border-radius: 15px;
+    margin-left: 2.3vw;
+    min-height: 10vw;
+    max-width: 35vw;
+    font-size: 1.3vw;
+}
+
+button#berry-button2{
+    z-index: 3;
+    width: 3vw;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: -22.6vh;
+    left: 13.6vw;
+    cursor: pointer;
+}
+
+button#berry-button2 img{
+    width: 27vw;
+}
+
+button#berry-button2 img:hover{
+    width: 28vw;
+}
+
+img#berry-cancel2{
+    cursor: pointer;
+}
+
+.berry-modal2 {
+    position: sticky;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    padding-top: 0.1vw;
+    overflow: auto;
+    background-image: url("../media/desktoptry2.png");
+    background-size: 95.7vw;
+}
+
+.berry-modal2::backdrop {
+    background: linear-gradient(45deg, purple, pink);
+    opacity: 0.3;
+}
+
+div#header3{
+    display: flex;
+    padding-left: 77vw;
+    border-radius:5%;
+}
+
+div#header3 img{
+    width: 5vw;
+}
+
+div#header3 p{
+    font-size:1.2vw;
+    font-family:'LocalBrewerySans';
+}
+
+div#contenthere2 {
+    display: flex;
+    gap: 0vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: -3vw;
+    padding-top: 2vw;
+    padding-bottom: 2.8vw;
+    font-family: 'Cream';
+}
+
+div#berry-slidebox2 {
+    position: relative;
+}
+
+div#contenthere2 img#slideshow-frame2{
+    width: 48.7vw;
+    height: 33vw;
+}
+
+.berry-vids2 {
+    z-index:1;
+    position: absolute;
+    top: 3.57vw;
+    left: 0.65vw;
+    border-radius:1%;
+    border: 2px #8bd4c4 solid;
+    object-fit: cover;
+    width:47vw;
+    height: 25vw;
+    opacity:1;
+    transition: opacity 1s ease-out;
+}
+
+div#berry-slidebar2 {
+    background-color:beige;
+    margin: 2.5vw;
+}
+
+.slidebar-content2{
+    background-image:url("../media/berry-gridbrow.png");
+    border-radius: 3%;
+    margin: 1vw;
+    padding-bottom: 2vw;
+    opacity: 0.8;
+    z-index:1;
+    position: absolute;
+    opacity:1;
+    transition: opacity 1s ease-out;
+    object-fit: cover;
+    font-size: 1.2vw;
+    margin: 2vw;
+}
+
+.slidebar-content2 img{
+    padding-left: 3vw;
+    margin-top: -7vw;
+    margin-bottom: -3vw;
+    width: 27vw;
+}
+
+.slidebar-content2 p{
+    font-size: 1.2vw;
+    margin: 2vw;
+    text-align: justify;
+    color: white;
+}
+
+div#arrow-buttons2{
+    display: flex;
+    gap: 3vw;
+    position: absolute;
+    top: 4vw;
+    left: 56vw;
+}
+
+div#arrow-buttons2 img#left2{
+    width: 4vw;
+    z-index: 3;
+    cursor: pointer;
+}
+div#arrow-buttons2 img#right2{
     width: 4vw;
     z-index: 3;
     cursor: pointer;
