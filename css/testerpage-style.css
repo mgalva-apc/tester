@@ -18,12 +18,17 @@
     src: url(../fonts/CabrioleDemoRegular.ttf);
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-image: url("../media/berry-bg.png");
-    width: 100vh;
+    min-height: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 
 div#navibar {
@@ -110,10 +115,18 @@ div#rightside img:hover{
 div#content1{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 25vw;
+}
+
+#herecontent {
+    position: relative;
+    min-height: 75vh;
 }
 
 div#picrep{
     position: relative;
+    min-width: 27vw;
 }
 
 .picsforrep {
@@ -126,8 +139,11 @@ div#picrep{
 }
 
 img#name{
-    width: 5vw;
-    position: relative;
+    width: 25vw;
+    height: auto;
+    top: 45vh;
+    left: 5vw;
+    position: absolute;
     z-index: 2;
 }
 
@@ -168,6 +184,7 @@ div#contenthere img#slideshow-frame{
 div#berry-slidebar {
     background-color:beige;
     margin: 2.5vw;
+    border: 1px red solid;
 }
 
 .slidebar-content{
@@ -219,12 +236,13 @@ div#arrow-buttons img#right{
 }
 
 div#footer{
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 100vw;
     min-width: 100vw;
     background-color: white;
-    height: 12vw;
+    height: 25vh;
     justify-content: space-around;
     font-family: Cream;
 }
