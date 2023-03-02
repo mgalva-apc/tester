@@ -90,5 +90,5 @@ function showSlidesAuto2(s, i) {
 
 showSlidesAuto(slides, 0);
 showSlides(0);
-showSlidesAuto2(slides, 0);
+showSlidesAuto2(slides2, 0);
 showSlides2(0);
