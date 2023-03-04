@@ -88,7 +88,34 @@ function showSlidesAuto2(s, i) {
     setTimeout(function () { showSlidesAuto2(s, i) }, 5000);
 }
 
+//simp rater
+var simpPortraits = document.getElementsByClassName("simpfor");
+var simpRatings = document.getElementsByClassName("simpytex");
+var simpBtn = document.getElementById("picsimp");
+var simpModal = document.getElementById("simpmodal");
+simpBtn.addEventListener('click', function() { simpModal.showModal() } );
+var simpicons = document.getElementsByClassName("iconsimp");
+for (let i=0; i<simpicons.length; ++i) {
+    simpicons[i].addEventListener('click', function() { simpModal.close() });
+}
+function showSimp(index) {
+    for (var i=0; i<simpPortraits.length; ++i) {
+      simpPortraits[i].style.opacity = "0";
+      simpRatings[i].style.opacity = "0";
+    }    
+    simpPortraits[index].style.opacity = "1";
+    simpRatings[index].style.opacity = "1";
+  }
+
+//infomodal
+var infoBtn = document.getElementById("simpinfo");
+var infoModal = document.getElementById("infoOnsimp");
+infoBtn.addEventListener('click', function() { infoModal.showModal() } );
+var canBtn = document.getElementById("berry-cancelagen");
+canBtn.addEventListener('click', function() { infoModal.close()} );
+
 showSlidesAuto(slides, 0);
 showSlides(0);
 showSlidesAuto2(slides2, 0);
 showSlides2(0);
+showSimp(0)
