@@ -112,20 +112,40 @@ div#rightside img:hover{
     width:7vw;
 }
 
-div#archiver-bea{
+div#goddess-stuff{
     display: flex;
     gap: 3vw;
     min-height: 100vh;
 }
 
-.person{
+div#bea-stuff{
+    display: flex;
+    gap: 3vw;
+    min-height: 100vh;
+}
+
+.goddess{
     width: 33vw;
     position: absolute;
     top: 20vh;
     left: 15vw;
 }
 
-.texxbox{
+.bea{
+    width: 33vw;
+    position: absolute;
+    top: 20vh;
+    left: 15vw;
+}
+
+.god-title img{
+    width: 33vw;
+    position: absolute;
+    top: 32vh;
+    right: 15vw;
+}
+
+.god-texxbox{
     width: 33vw;
     position: absolute;
     top: 32vh;
@@ -133,7 +153,26 @@ div#archiver-bea{
     font-family: Cream;
 }
 
-.texxbox img{
+.god-texxbox img{
+    width: 40vw;
+}
+
+.bea-texxbox{
+    width: 33vw;
+    position: absolute;
+    top: 32vh;
+    right: 15vw;
+    font-family: Cream;
+}
+
+.bea-title img{
+    width: 33vw;
+    position: absolute;
+    top: 32vh;
+    right: 15vw;
+}
+
+.bea-texxbox img{
     width: 40vw;
 }
 
