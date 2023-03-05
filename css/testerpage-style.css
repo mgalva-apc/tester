@@ -226,6 +226,29 @@ div#bea-stuff{
     border-radius: 25px;
 }
 
+div#instructions{
+    background-color: white;
+    font-family: Cream;
+    Color: purple;
+    min-height: 5vh;
+    width: 45vw;
+    font-size: 1.7vw;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 28vw;
+}
+
+div#education-stuff{
+    height: 83vh;
+}
+
+.schoolskill{
+    width: 65vw;
+    position: absolute;
+    top: 135vh;
+    left: 17vw;
+}
+
 div#footer{
     position: relative;
     display: flex;
