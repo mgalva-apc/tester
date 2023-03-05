@@ -1,55 +1,76 @@
-var personaGoddess = document.getElementByID("goddess-stuff");
-var personaBea = document.getElementByID("bea-stuff");
-var goddessTitle = document.getElementByID("god-title");
-var goddessDesc = document.getElementByID("god-texboxx");
-var beaTitle = document.getElementByID("bea-title");
-var beaDesc = document.getElementByID("bea-texboxx");
+var personaGoddess = document.getElementById("goddess-stuff");
+var personaBea = document.getElementById("bea-stuff");
+var goddessTitle = document.getElementsByClassName("god-title");
+var goddessDesc = document.getElementsByClassName("god-texboxx");
+var beaTitle = document.getElementsByClassName("bea-title");
+var beaDesc = document.getElementsByClassName("bea-texboxx");
 
 function swapPersona(persona) {
+  console.log("(debug) test" + persona);
   if (persona == 0) { //if persona is goddess
-    personaBea.style.height = "0";
-    personaBea.style.opacity = "1";
-    personaGoddess.style.height = "1";
-    personaGoddess.style.height = "100%"
+    // personaBea[0].style.height = "0";
+    // personaBea[0].style.opacity = "0";
+    // personaGoddess[0].style.opacity = "1";
+    // personaGoddess[0].style.height = "50vh"
+    personaBea.style.display="none";
+    personaGoddess.style.display="flex";
+    goddessDesc[0].style.display="none";
+    goddessTitle[0].style.display="block";
+    beaTitle[0].style.display="none";
+    beaDesc[0].style.display="none";
   }
   if (persona == 1) { //if persona is bea
-    personaGoddess.style.height = "0";
-    personaGoddess.style.opacity = "1";
-    personaBea.style.height = "1";
-    personaBea.style.height = "100%"
+    // personaGoddess[0].style.height = "0";
+    // personaGoddess[0].style.opacity = "0";
+    // personaBea[0].style.opacity = "1";
+    // personaBea[0].style.height = "50vh"
+    personaBea.style.display="flex";
+    personaGoddess.style.display="none";
+    goddessDesc[0].style.display="none";
+    goddessTitle[0].style.display="none";
+    beaTitle[0].style.display="block";
+    beaDesc[0].style.display="none";
   }
 }
 
 function swapTitle(persona, textDisplay) {
   if (persona ==  0) { //if persona is goddess
     if (textDisplay == 0) { //if desired display is title
-      goddessDesc.style.height = "0";
-      goddessDesc.style.opacity = "1";
-      goddessTitle.style.height = "1";
-      goddessTitle.style.height = "100%"
+      // goddessDesc[0].style.height = "0";
+      // goddessDesc[0].style.opacity = "0";
+      // goddessTitle[0].style.opacity = "1";
+      // goddessTitle[0].style.height = "50vh"
+      goddessDesc[0].style.display="none";
+      goddessTitle[0].style.display="block";
     }
 
     if (textDisplay == 1) { //if desired display is desc
-      goddessTitle.style.height = "0";
-      goddessTitle.style.opacity = "1";
-      goddessDesc.style.height = "1";
-      goddessDesc.style.height = "50vh"
+      // goddessTitle[0].style.height = "0";
+      // goddessTitle[0].style.opacity = "0";
+      // goddessDesc[0].style.opacity = "1";
+      // goddessDesc[0].style.height = "50vh"
+      goddessDesc[0].style.display="block";
+      goddessTitle[0].style.display="none";
     }
   }
 
   if (persona ==  1) { //if persona is bea
     if (textDisplay == 0) { //if desired display is title
-      beaDesc.style.height = "0";
-      beaDesc.style.opacity = "1";
-      beaTitle.style.height = "1";
-      beaTitle.style.height = "100%"
+      // beaDesc[0].style.height = "0";
+      // beaDesc[0].style.opacity = "0";
+      // beaTitle[0].style.opacity = "1";
+      // beaTitle[0].style.height = "50vh"
+      beaDesc[0].style.display = "none";
+      beaTitle[0].style.display="block";
     }
 
     if (textDisplay == 1) { //if desired display is desc
-      beaTitle.style.height = "0";
-      beaTitle.style.opacity = "1";
-      beaDesc.style.height = "1";
-      beaDesc.style.height = "100%"
+      // beaTitle[0].style.height = "0";
+      // beaTitle[0].style.opacity = "0";
+      // beaDesc[0].style.opacity = "1";
+      // beaDesc[0].style.height = "50vh"
+      beaDesc[0].style.display = "block";
+      beaTitle[0].style.display="none";
     }
   }
 }

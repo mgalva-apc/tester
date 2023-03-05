@@ -114,47 +114,42 @@ div#rightside img:hover{
 
 div#content {
     min-height: 100vh;
-    border: 5px solid red;
 }
 
 
 div#goddess-stuff{
-    display: flex;
+    display: none;
     gap: 3vw;
-    min-height: 50vh;
-    opacity:0;
-    transition: opacity 1s ease-out;
+    min-height: 100vh;
+    cursor: pointer;
 }
 
 div#bea-stuff{
-    display: flex;
+    display: none;
     gap: 3vw;
-    min-height: 50vh;
-    opacity:0;
-    transition: opacity 1s ease-out;
+    min-height: 100vh;
+    cursor: pointer;
 }
 
 .goddess{
     width: 33vw;
+    height: auto;
     position: absolute;
     top: 20vh;
     left: 15vw;
-    opacity:0;
-    transition: opacity 1s ease-out;
 }
 
 .bea{
     width: 33vw;
+    height: auto;
     position: absolute;
     top: 20vh;
     left: 15vw;
-    opacity:0;
-    transition: opacity 1s ease-out;
 }
 
 .god-title{
-    opacity:0;
-    transition: opacity 1s ease-out;
+    display: none;
+    cursor: pointer;
 }
 
 .god-title img{
@@ -170,8 +165,8 @@ div#bea-stuff{
     top: 32vh;
     right: 15vw;
     font-family: Cream;
-    opacity:0;
-    transition: opacity 1s ease-out;
+    display: none;
+    cursor: pointer;
 }
 
 .god-texboxx img{
@@ -184,13 +179,13 @@ div#bea-stuff{
     top: 32vh;
     right: 15vw;
     font-family: Cream;
-    opacity:0;
-    transition: opacity 1s ease-out;
+    display: none;
+    cursor: pointer;
 }
 
 .bea-title{
-    opacity:0;
-    transition: opacity 1s ease-out;
+    display: none;
+    cursor: pointer;
 }
 
 .bea-title img{
@@ -369,3 +364,13 @@ div#contact p{
 p#webprog{
     margin-top: -0.50vw;
 }
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
