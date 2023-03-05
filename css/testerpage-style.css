@@ -112,38 +112,98 @@ div#rightside img:hover{
     width:7vw;
 }
 
-div#archiver-bea{
+
+div#goddess-stuff{
     display: flex;
     gap: 3vw;
+    min-height: 100vh;
+    border: 5px solid green;
 }
 
-.person{
+div#bea-stuff{
+    display: flex;
+    gap: 3vw;
+    min-height: 100vh;
+    border: 5px solid purple
+}
+
+.goddess{
     width: 33vw;
     position: absolute;
     top: 20vh;
     left: 15vw;
 }
 
-.texxbox{
+.bea{
+    width: 33vw;
+    position: absolute;
+    top: 20vh;
+    left: 15vw;
+}
+
+.god-title img{
     width: 33vw;
     position: absolute;
     top: 32vh;
     right: 15vw;
 }
 
-.texxbox img{
+.god-texboxx{
+    width: 33vw;
+    position: absolute;
+    top: 32vh;
+    right: 15vw;
+    font-family: Cream;
+}
+
+.god-texboxx img{
+    width: 40vw;
+}
+
+.bea-texboxx{
+    width: 33vw;
+    position: absolute;
+    top: 32vh;
+    right: 15vw;
+    font-family: Cream;
+}
+
+.bea-title img{
+    width: 33vw;
+    position: absolute;
+    top: 32vh;
+    right: 15vw;
+}
+
+.bea-texboxx img{
     width: 40vw;
 }
 
 .basictext{
     display: flex;
-    gap: 1vw;
+    gap: 5vw;
+    position: absolute;
+    top: 21vh;
+    right: -1vw;
+    max-height: 30vh;
+    width: 30vw;
+    font-size: 1vw;
+}
+
+.basictext p{
+    margin-bottom: -2vh;
 }
 
 .commentinfo{
     background-color: white;
     border-radius: 2px;
     min-height: 6vh;
+    position: absolute;
+    top: 44vh;
+    right: -4vw;
+    width: 35vw;
+    height: 25vh;
+    border-radius: 25px;
 }
 
 div#footer{
