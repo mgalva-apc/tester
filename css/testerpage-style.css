@@ -115,6 +115,7 @@ div#rightside img:hover{
 div#archiver-bea{
     display: flex;
     gap: 3vw;
+    min-height: 100vh;
 }
 
 .person{
@@ -129,6 +130,7 @@ div#archiver-bea{
     position: absolute;
     top: 32vh;
     right: 15vw;
+    font-family: Cream;
 }
 
 .texxbox img{
@@ -137,13 +139,29 @@ div#archiver-bea{
 
 .basictext{
     display: flex;
-    gap: 1vw;
+    gap: 5vw;
+    position: absolute;
+    top: 21vh;
+    right: -1vw;
+    max-height: 30vh;
+    width: 30vw;
+    font-size: 1vw;
+}
+
+.basictext p{
+    margin-bottom: -2vh;
 }
 
 .commentinfo{
     background-color: white;
     border-radius: 2px;
     min-height: 6vh;
+    position: absolute;
+    top: 44vh;
+    right: -4vw;
+    width: 35vw;
+    height: 25vh;
+    border-radius: 25px;
 }
 
 div#footer{
