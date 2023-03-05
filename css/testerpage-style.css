@@ -121,13 +121,17 @@ div#content {
 div#goddess-stuff{
     display: flex;
     gap: 3vw;
-    min-height: 100vh;
+    min-height: 50vh;
+    opacity:0;
+    transition: opacity 1s ease-out;
 }
 
 div#bea-stuff{
     display: flex;
     gap: 3vw;
-    min-height: 100vh;
+    min-height: 50vh;
+    opacity:0;
+    transition: opacity 1s ease-out;
 }
 
 .goddess{
@@ -135,6 +139,8 @@ div#bea-stuff{
     position: absolute;
     top: 20vh;
     left: 15vw;
+    opacity:0;
+    transition: opacity 1s ease-out;
 }
 
 .bea{
@@ -142,12 +148,19 @@ div#bea-stuff{
     position: absolute;
     top: 20vh;
     left: 15vw;
+    opacity:0;
+    transition: opacity 1s ease-out;
+}
+
+.god-title{
+    opacity:0;
+    transition: opacity 1s ease-out;
 }
 
 .god-title img{
     width: 33vw;
     position: absolute;
-    top: 32vh;
+    top: 35vh;
     right: 15vw;
 }
 
@@ -157,6 +170,8 @@ div#bea-stuff{
     top: 32vh;
     right: 15vw;
     font-family: Cream;
+    opacity:0;
+    transition: opacity 1s ease-out;
 }
 
 .god-texboxx img{
@@ -169,10 +184,17 @@ div#bea-stuff{
     top: 32vh;
     right: 15vw;
     font-family: Cream;
+    opacity:0;
+    transition: opacity 1s ease-out;
+}
+
+.bea-title{
+    opacity:0;
+    transition: opacity 1s ease-out;
 }
 
 .bea-title img{
-    width: 33vw;
+    width: 35vw;
     position: absolute;
     top: 32vh;
     right: 15vw;
