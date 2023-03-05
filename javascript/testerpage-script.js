@@ -1,33 +1,57 @@
-var fischlPersona = document.getElementByID("fiscl");
-var kokomiPersona = document.getElementByID("kokomi");
-var fischlText = document.getElementByID("fischl-text");
-var kokomiText = document.getElementByID("kokomi-text");
-function swapPersona(n) {
-  if (n == 0) {
-    kokomiPersona.style.opacity = "0";
-    kokomiPersona.style.height= "0";
-    fischlPersona.style.opacity= "1"; 
-    fischlPersona.style.height = //whatever the height is supposed to be for it;
+var personaGoddess = document.getElementByID("goddess-stuff");
+var personaBea = document.getElementByID("bea-stuff");
+var goddessTitle = document.getElementByID("god-title");
+var goddessDesc = document.getElementByID("god-texboxx");
+var beaTitle = document.getElementByID("bea-title");
+var beaDesc = document.getElementByID("bea-texboxx");
+
+function swapPersona(persona) {
+  if (persona == 0) { //if persona is goddess
+    personaBea.style.height = "0";
+    personaBea.style.opacity = "1";
+    personaGoddess.style.height = "1";
+    personaGoddess.style.height = "100%"
   }
-  if (n == 1) {
-    fischlPersona.style.opacity = "0";
-    fischlPersona.style.height= "0";
-    kokomiPersona.style.opacity= "1"; 
-    kokomiPersona.style.height = //whatever the height is supposed to be for it;
+  if (persona == 1) { //if persona is bea
+    personaGoddess.style.height = "0";
+    personaGoddess.style.opacity = "1";
+    personaBea.style.height = "1";
+    personaBea.style.height = "100%"
   }
 }
 
-function swapText(n) {
-  if (n == 0) {
-    kokomiText.style.opacity = "0";
-    kokomiText.style.height= "0";
-    fischlText.style.opacity= "1"; 
-    fischlText.style.height = //whatever the height is supposed to be for it;
+function swapTitle(persona, textDisplay) {
+  if (persona ==  0) { //if persona is goddess
+    if (textDisplay == 0) { //if desired display is title
+      goddessDesc.style.height = "0";
+      goddessDesc.style.opacity = "1";
+      goddessTitle.style.height = "1";
+      goddessTitle.style.height = "100%"
+    }
+
+    if (textDisplay == 1) { //if desired display is desc
+      goddessTitle.style.height = "0";
+      goddessTitle.style.opacity = "1";
+      goddessDesc.style.height = "1";
+      goddessDesc.style.height = "50vh"
+    }
   }
-  if (n == 1) {
-    fischlText.style.opacity = "0";
-    fischlText.style.height= "0";
-    kokomiText.style.opacity= "1"; 
-    kokomiText.style.height = //whatever the height is supposed to be for it;
+
+  if (persona ==  1) { //if persona is bea
+    if (textDisplay == 0) { //if desired display is title
+      beaDesc.style.height = "0";
+      beaDesc.style.opacity = "1";
+      beaTitle.style.height = "1";
+      beaTitle.style.height = "100%"
+    }
+
+    if (textDisplay == 1) { //if desired display is desc
+      beaTitle.style.height = "0";
+      beaTitle.style.opacity = "1";
+      beaDesc.style.height = "1";
+      beaDesc.style.height = "100%"
+    }
   }
 }
+swapPersona(0);
+swapTitle(0,0)
